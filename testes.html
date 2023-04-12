@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> teste</title>
+    <link rel="stylesheet" href="bibliotecas/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bibliotecas/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/sb-admin.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="page-top" class="bg-demis1 fixed-nav sticky-footer">
+    <!--navegeção-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <a class="navbar-brand" href="index.html"> RH SYSTEM</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCurso" aria-controls="navbarCurso" aria-expanded="false" aria-label="Navegação Toggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarCurso" class="collapse navbar-collapse">
+            <ul class="navbar-nav navbar-sidenav" id="linksaccordion">
+                
+                <li class="nav-item">
+                    <a href="tabel.html" class="nav-link"> <img src="assets/images/bootstrap-icons/people-fill.svg" alt="">
+                       <span class="nav-link-text">Funcionários</span>
+                        
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="edit.html" class="nav-link"><img src="assets/images/bootstrap-icons/person-fill.svg" alt="">
+                       <span class="nav-link-text">Editar Perfil</span>
+                        
+                    </a>
+                </li>
+                
+                
+            </ul>
+            <ul class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                    <a href="#" id="sidenavToggler" class="nav-link nav-center">
+                        <i class="fa fa-fw fa-angle-left"></i>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                   
+            </ul>
+        </div>
+    </nav>
+   
+
+
+    <div class="content-wrapper">
+        <div class="container-grid">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-5">5</div>
+            <div class="item item-6">6</div>
+            <div class="item item-7">7</div>
+            <div class="item item-8">8</div>
+            <div class="item item-9">9</div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="card mx-auto mt-5 bg-dark">
+                <div class="text-light " style="font-size:50px; text-align:center">Demissão</div>
+                <div class="card-body">
+                    <div class="text-center mt-1 mb-5">
+                
+                        <p class="text-light">Informe os dados necessários e enviaremos um e-mail</p>
+                    </div>
+                    <div class="container2">
+                        <div class=" mb-5" style="width:150px; height:150px; background-color: #ccc;">
+                            <img src="">
+                        </div>
+                        <div class="form-group col-10 mx-auto" >
+                            <div class="form-row">
+                                <div class="col-md-12">
+                                    <label for="nome" class="text-light">Nome:</label>
+                                    <input type="text" readonly value="José da Silva" class="form-control" id="primeiroNome" name="primeiroNome"  placeholder="Nome do Funcionário" required>                             
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="data" class="text-light">Data:</label>
+                                    <input type="text" value="25/11/2022" readonly class="form-control" id="data" name="Data" >
+                                </div>
+                            </div>
+                           </div>
+                            
+                   
+                       
+                    </div>    
+                    
+                    
+                    <form>
+                        
+                        <div class="form-group">
+                         <label for="gerente" class="text-light">Gerente:</label>
+                         <input type="text" class="form-control" id="Gerente" name="gerente" value="Marcos Antônio" readonly>
+                        </div>
+                        <div class="form-group">
+                         <div class="form-row">
+                             <div class="col-md-12">
+                                 <label for="causa" class="text-light">Causa:</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Selecione</option>
+                                <option>Justa Causa</option>
+                                <option>Não Justa Causa</option>
+                                <option>Pediu demissão</option>
+                                
+                                </select>
+                             </div>
+                             <div class="col-md-8 mt-3">
+                                 <label for="motivo" class="text-light">Motivo:</label>
+                                 <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                                 
+                             </div>
+                         </div>
+                        </div>
+                        
+    
+                        <div class="container">
+                            <button class="btn btn-danger col-md-3 mr-md-3" id="btnToast" type="submit">Demitir Funcionário</button>
+
+                            <button type="button" class="btn btn-warning col-md-3 mr-md-3" data-toggle="modal" data-target="#exampleModal">
+                                Cancelar
+                              </button>
+                              
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Demissão Cancelada</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    A demissão foi cancelada, redirecionando para a Lista de Funcionários
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                      <button type="button" class="btn btn-primary">Ok</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        <a href="tabel.html" class="btn btn-success col-md-3 mr-md-3">Voltar</a>
+                        </div>
+                       
+                        
+                        
+                     </form>
+                </div>
+    
+            </div>
+        
+     
+    
+            
+        <footer class="sticky-footer">
+            <div class="container">
+                <div class="text-center">
+                    <small>Copyright &copy;2022 </small>
+                </div>
+            </div>
+        </footer>
+   </div>
+
+    
+
+
+
+
+
+
+<script src="./bibliotecas/jquery/jquery.min.js"></script>    
+<script src="./bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./bibliotecas/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/sb-admin.min.js"></script>
+<script type="text/javascript">
+    $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})
+</script>
+</body>
+</html>
